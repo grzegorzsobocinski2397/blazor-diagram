@@ -1,0 +1,24 @@
+﻿@using Blazor.Diagrams.Components.Renderers;
+@using DiagramJS.Data
+
+<div class="card" style="width: 250px;">
+    <div class="card-body">
+        <h5 class="card-title">Add</h5>
+        <div class="form-group">
+            <input class="form-control" @bind-value="Node.Segment" placeholder="Segment" />
+        </div>
+        <div class="form-group">
+            <input class="form-control" @bind-value="Node.Material" placeholder="Material" />
+        </div>
+    </div>
+    @foreach (var port in Node.Ports)
+    {
+        <!-- Default ports -->
+        <PortRenderer Port="port" />
+    }
+</div>
+
+@code {
+    [Parameter]
+    public Process Node { get; set; } = new();
+}

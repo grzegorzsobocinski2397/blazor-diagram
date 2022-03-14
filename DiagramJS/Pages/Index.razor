@@ -1,3 +1,9 @@
 ﻿@page "/"
 
-<span>Works</span>
+@using Blazor.Diagrams.Core;
+@using Blazor.Diagrams.Core.Models;
+@using Blazor.Diagrams.Components;
+
+<CascadingValue Value="Diagram">
+    <DiagramCanvas></DiagramCanvas>
+</CascadingValue>
