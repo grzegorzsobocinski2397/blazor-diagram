@@ -21,17 +21,17 @@ namespace BlazorDiagram.Pages
             var rootNode = new Process(new Point(50, 50));
             rootNode.AddPort(PortAlignment.Bottom);
             rootNode.Material = "SM";
-            rootNode.Title = "Process";
+            rootNode.Title = "Root";
 
             var childNode = new Process(new Point(50, 300));
             childNode.AddPort(PortAlignment.Bottom);
             childNode.AddPort(PortAlignment.Top);
             rootNode.Material = "Custom";
-            childNode.Title = "Manufacturing";
+            childNode.Title = "Child";
 
             var grandChildNode = new Process(new Point(50, 600));
             grandChildNode.AddPort(PortAlignment.Top);
-            grandChildNode.Title = "Smart";
+            grandChildNode.Title = "Grandchild";
 
             Diagram.Nodes.Add(new[] { rootNode, childNode, grandChildNode });
             Diagram.Links.Add(new LinkModel(rootNode.GetPort(PortAlignment.Bottom), childNode.GetPort(PortAlignment.Top)));
