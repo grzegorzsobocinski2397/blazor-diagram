@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "DiagramJS": {
+    "BlazorDiagram": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

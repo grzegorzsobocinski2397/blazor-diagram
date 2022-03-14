@@ -1,7 +1,7 @@
 ﻿using Blazor.Diagrams.Core.Geometry;
 using Blazor.Diagrams.Core.Models;
 
-namespace DiagramJS.Data
+namespace BlazorDiagram.Data
 {
     public class Process : NodeModel
     {

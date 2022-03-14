@@ -1,9 +1,9 @@
 ﻿using Blazor.Diagrams.Core;
 using Blazor.Diagrams.Core.Geometry;
 using Blazor.Diagrams.Core.Models;
-using DiagramJS.Data;
+using BlazorDiagram.Data;
 
-namespace DiagramJS.Pages
+namespace BlazorDiagram.Pages
 {
     public partial class Index
     {
